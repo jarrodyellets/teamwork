@@ -77,10 +77,6 @@ export class Events<T> {
     end(): void;
 }
 
-/**
- * @internal
- */
-
 export namespace Events {
 
     class Iterator<T> implements AsyncIterator<T> {
