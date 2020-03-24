@@ -53,6 +53,7 @@ export namespace Team {
 
 /**
  * Events emitter via an async iterator interface.
+ * @ignore
  */
 export class Events<T> {
 
@@ -75,6 +76,10 @@ export class Events<T> {
      */
     end(): void;
 }
+
+/**
+ * @ignore
+ */
 
 export namespace Events {
 
