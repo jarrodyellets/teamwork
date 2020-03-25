@@ -7,6 +7,9 @@ export class Team<Results extends any | any[] = void> {
     /**
      * Start a new team work.
      * 
+     *Example:
+     *```new Team({ meetings: 3 } //Setup 3 meetings```
+     *
      * @param options Configuration of the team work.
      */
     constructor(options?: Team.Options);
