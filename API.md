@@ -1,19 +1,20 @@
-## new Team(options)
+
+### new Team(options)
 
 
-## work
+### work
 
 
-## attend
+### attend(note)
 
 
-## regroup
+### regroup(options)
 
 
-## emit
+### emit(value)
 
 
-## end
+### end()
 
 
-## iterator
+### iterator()
