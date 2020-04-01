@@ -10,11 +10,3 @@
 
 ### regroup(options)
 
-
-### emit(value)
-
-
-### end()
-
-
-### iterator()
