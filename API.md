@@ -20,7 +20,22 @@ Example:
 ```js
 const Teamwork = require('@hapi/teamwork');
 
-const events = new Teamwork.Events() //Create new Events object
+const handler = async function() {
+
+  const events = new Teamwork.Events();
+  
+  events.emit(1);
+  events.emit(2);
+  events.end();
+  
+  const items = [];
+  
+  for await (const item of events.iterator()) {
+      items.push(item);
+  }
+
+  return items //Returns [1, 2, 3];
+}
 ```
 
 #### iterator()
