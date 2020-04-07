@@ -11,10 +11,7 @@ export class Team<Results extends any | any[] = void> {
      * callback events into a single promise.
      * 
      * Start a new team work.
-     * 
-     * Start a new team work.
-     * 
-     *Example:
+     * Example:
      *
      *```js
      *const Teamwork = require('@hapi/teamwork');
