@@ -26,6 +26,7 @@ const handler = async function() {
   
   events.emit(1);
   events.emit(2);
+  events.emit(3);
   events.end();
   
   const items = [];
