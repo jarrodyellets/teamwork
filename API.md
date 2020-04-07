@@ -11,7 +11,7 @@
 #### regroup(options)
 
 
-### Events
+### new Events()
 
 
 #### emit(value)
