@@ -2,19 +2,22 @@
 ### new Team(options)
 
 
-### work
+#### work
 
 
-### attend(note)
+#### attend(note)
 
 
-### regroup(options)
+#### regroup(options)
 
 
-### emit(value)
+### Events
 
 
-### end()
+#### emit(value)
 
 
-### iterator()
+#### end()
+
+
+#### iterator()
