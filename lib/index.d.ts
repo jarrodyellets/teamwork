@@ -33,14 +33,7 @@ export class Team<Results extends any | any[] = void> {
 
     /**
      * Attend a single meeting.
-     * 
-     * @param note An optional note that will be included in the work's results. If an error is provided, the work will be immediately rejected with that error.
-     */
-    attend(note?: Error | Team.ElementOf<Results>): void;
-
-    /**
-     * Wait for the current work to be done and start another team work.
-     * 
+     *
      *Example:
      *
      *```js
@@ -50,7 +43,14 @@ export class Team<Results extends any | any[] = void> {
      *
      *team.attend('1'); //Attend a meeting with a note of '1' 
      *```
-     *
+     * 
+     * @param note An optional note that will be included in the work's results. If an error is provided, the work will be immediately rejected with that error.
+     */
+    attend(note?: Error | Team.ElementOf<Results>): void;
+
+    /**
+     * Wait for the current work to be done and start another team work.
+     * 
      * @param options New configuration of the team work.
      *
      * @returns a promise that resolves when the current work is done.
