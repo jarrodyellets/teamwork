@@ -5,12 +5,21 @@
  */
 export class Team<Results extends any | any[] = void> {
     /**
+     * 
+     * Team bridges between callbacks and promises. Used to convert callback-based
+     * interfaces to a promise-based result including support for collecting multiple
+     * callback events into a single promise.
+     * 
+     * Start a new team work.
+     * 
      * Start a new team work.
      * 
      *Example:
      *
      *```js
-     *new Team({ meetings: 3 } //Setup 3 meetings
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const team = new Teamwork.Team({ meetings: 3 }); //Setup 3 meetings
      *```
      *
      * @param options Configuration of the team work.
@@ -32,6 +41,16 @@ export class Team<Results extends any | any[] = void> {
     /**
      * Wait for the current work to be done and start another team work.
      * 
+     *Example:
+     *
+     *```js
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const team = new Teamwork.Team();
+     *
+     *team.attend('1'); //Attend a meeting with a note of '1' 
+     *```
+     *
      * @param options New configuration of the team work.
      *
      * @returns a promise that resolves when the current work is done.
