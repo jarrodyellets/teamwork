@@ -82,12 +82,33 @@ export class Events<T> {
     /**
      * Returns a standard async iterator interface object.
      *
+     *Example:
+     *
+     *```js
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const events = new Teamwork.Events();
+     *
+     *const iterator = events.iterator();
+     *```
+     * 
      * @returns async iterator interface object.
      */
     iterator(): Events.Iterator<T>;
 
     /**
      * Emits an event to be consumed via the iterator.
+     *
+     *Example:
+     *
+     *```js
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const events = new Teamwork.Events();
+     *
+     *events.emit(1);
+     *events.emit(2);
+     *```
      * 
      * @param value
      */
@@ -95,6 +116,18 @@ export class Events<T> {
 
     /**
      * Informs the iterator that no new events will be emitted.
+     *
+     *Example:
+     *
+     *```js
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const events = new Teamwork.Events();
+     *
+     *events.emit(1);
+     *events.emit(2);
+     *events.end();
+     *```
      */
     end(): void;
 }
