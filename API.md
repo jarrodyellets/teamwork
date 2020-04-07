@@ -13,7 +13,7 @@
 
 ### new Events()
 
-Returns a standard async iterator interface object.
+Creates an events emitter via an async iterator interface.
 
 Example:
 
@@ -23,10 +23,11 @@ const Teamwork = require('@hapi/teamwork');
 const events = new Teamwork.Events() //Create new Events object
 ```
 
+#### iterator()
+
+
 #### emit(value)
 
 
 #### end()
 
-
-#### iterator()
