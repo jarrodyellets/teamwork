@@ -1,12 +1,12 @@
 
-### new Team(options)
+### new Teamwork(options)
 
 
-### work
+#### work
 
 
-### attend(note)
+#### attend(note)
 
 
-### regroup(options)
+#### regroup(options)
 
