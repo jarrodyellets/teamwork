@@ -13,6 +13,15 @@ type ElementOf<T> = T extends (infer E)[] ? E : T;
 export class Teamwork<Results extends any | any[] = void> {
     /**
      * Start a new team work.
+     *
+     *Example:
+     *
+      *```js
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const team = new Teamwork({ meetings: 3 }); //Setup 3 meetings
+     *```
+     *
      * @param options Configuration of the team work.
      */
     constructor(options?: Options);
@@ -24,6 +33,17 @@ export class Teamwork<Results extends any | any[] = void> {
 
     /**
      * Attend a single meeting.
+     *
+     *Example:
+     *
+     *```js
+     *const Teamwork = require('@hapi/teamwork');
+     *
+     *const team = new Teamwork();
+     *
+     *team.attend('1'); //Attend a meeting with a note of '1' 
+     *```
+     *
      * @param note An optional note that will be included in the work's results. If an error is provided, the work will be immediately rejected with that error.
      */
     attend(note?: Error | ElementOf<Results>): void;
